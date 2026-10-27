@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulando Datos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simulandoDatos.css">
+    <script type="module" src="js/simulandoDatos.js"></script>
+</head>     
+<body>
+    <main class="goals-layout" aria-label="Metas de ahorro">
+        <section class="goals-grid" id="goals-grid" aria-label="Tus metas"></section>
+        <aside class="goals-tips" aria-label="Consejos de ahorro">
+            <p class="goals-tips__encouragement">¡Sigue así! Estás muy cerca de tu meta 🌟</p>
+            <p class="goals-tips__advice"><span aria-hidden="true">💡</span><br><strong>Consejo:</strong> Ahorra al menos el 10% de tus ingresos mensualmente para alcanzar tus metas más rápido.</p>
+        </aside>
+    </main>
+
+    <dialog class="deposit-dialog" id="deposit-dialog" aria-labelledby="deposit-title">
+        <form id="deposit-form">
+            <button class="deposit-dialog__close" type="button" aria-label="Cerrar">×</button>
+            <h2 id="deposit-title">Abonar a tu meta</h2>
+            <label for="deposit-amount">Monto del abono</label>
+            <div class="deposit-dialog__amount">
+                <span aria-hidden="true">$</span>
+                <input id="deposit-amount" name="amount" type="number" min="1" step="1" required inputmode="numeric">
+            </div>
+            <button class="deposit-dialog__submit" type="submit">Confirmar abono</button>
+        </form>
+    </dialog>
+</body>
+</html>

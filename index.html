@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Descubre experiencias únicas, aprende sobre el medio ambiente y sé parte del cambio.">
+    <title>Conecta con la naturaleza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_forward,arrow_right_alt&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
-    Hola mundo 2
+    <header class="site-header">
+        <a class="site-brand" href="#inicio" aria-label="Natura Pro, inicio">
+            <span class="site-brand__mark" aria-hidden="true">
+                <img src="assets/desktop-logo-1.png" alt="">
+            </span>
+            <span class="site-brand__name"><span>Natura</span><span>Pro</span></span>
+        </a>
+        <div class="site-header__actions">
+            <nav class="site-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio" aria-current="page">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a class="site-header__join" href="#contacto">
+                <span>Únete</span>
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <ul class="hero__values" aria-label="Explora, aprende y cuida">
+                    <li>Explora</li>
+                    <li>Aprende</li>
+                    <li>Cuida</li>
+                </ul>
+                <h1 class="hero__title" id="hero-title">Conecta con la naturaleza</h1>
+                <p class="hero__description">Descubre experiencias únicas, aprende sobre el medio ambiente y sé parte del cambio.</p>
+                <a class="hero__cta" href="#contacto">
+                    <span>Comienza ahora</span>
+                    <span class="material-symbols-outlined hero__icon" aria-hidden="true">arrow_forward</span>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

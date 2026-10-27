@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.circulo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+}
+
+#arrow-right, #arrow-left{
+    position: absolute;
+    height: 30px;
+    bottom: -30px;
+}
+
+#arrow-right{
+    right: 0;
+}
+
+#arrow-left{
+    left: 0;
+}
